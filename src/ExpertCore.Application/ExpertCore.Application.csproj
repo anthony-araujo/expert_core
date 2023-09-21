@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>Expert.Application</RootNamespace>
+        <OutputType>Library</OutputType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="JHipsterNet.Core" />
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+        <PackageReference Include="MediatR" />
+        <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\ExpertCore.Domain\ExpertCore.Domain.csproj" />
+        <ProjectReference Include="..\ExpertCore.Domain.Services\ExpertCore.Domain.Services.csproj" />
+        <ProjectReference Include="..\ExpertCore.Dto\ExpertCore.Dto.csproj" />
+    </ItemGroup>
+
+</Project>

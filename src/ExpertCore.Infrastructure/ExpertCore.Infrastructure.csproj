@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>Expert.Infrastructure</RootNamespace>
+        <OutputType>Library</OutputType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+        <PackageReference Include="Serilog" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\ExpertCore.Domain\ExpertCore.Domain.csproj" />
+        <ProjectReference Include="..\ExpertCore.Dto\ExpertCore.Dto.csproj" />
+        <ProjectReference Include="..\ExpertCore.Crosscutting\ExpertCore.Crosscutting.csproj" />
+    </ItemGroup>
+
+</Project>
